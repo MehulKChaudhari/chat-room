@@ -104,6 +104,8 @@ ul {
   margin: 5px 0;
   border-radius: 5px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .member.active {
@@ -119,7 +121,16 @@ ul {
   background-color: #7289da;
   padding: 5px 10px;
   border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
   margin-right: 10px;
+}
+
+.avatar.small {
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
 }
 
 .avatar.self {
@@ -128,20 +139,35 @@ ul {
 
 .message {
   display: flex;
-  align-items: center;
-  padding: 10px;
-  background: #2f3136;
-  border-radius: 5px;
-  margin: 10px 0;
+  margin-bottom: 10px;
+  align-items: flex-start;
 }
 
-.message.self {
-  justify-content: flex-end;
+.message-content {
+  display: flex;
+  flex-direction: column;
 }
 
-.message-data {
+.message-content .name {
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.message-content .message-data {
   background: #40444b;
   padding: 10px;
   border-radius: 5px;
   max-width: 70%;
+}
+
+.message-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-details .name {
+  font-weight: bold;
+  color: #43b581;
+  margin-bottom: 2px;
 }
