@@ -9,6 +9,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+#user-name {
+  font-size: 2em;
+  border-radius: 10px;
+}
+
+.register-button {
+  margin-top: 10px;
+}
+
 input, button {
   font-size: 1.2em;
   border-radius: 5px;
@@ -98,10 +107,10 @@ ul {
 }
 
 .member {
-  padding: 10px;
+  padding: 5px;
   background: #2f3136;
   color: #fff;
-  margin: 5px 0;
+  margin: 10px 0;
   border-radius: 5px;
   cursor: pointer;
   display: flex;
@@ -119,7 +128,7 @@ ul {
 
 .avatar {
   background-color: #7289da;
-  padding: 5px 10px;
+  padding: 3px;
   border-radius: 50%;
   text-align: center;
   font-weight: bold;
@@ -130,7 +139,13 @@ ul {
 .avatar.small {
   width: 30px;
   height: 30px;
-  font-size: 14px;
+  /* font-size: 20px; */
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .avatar.self {

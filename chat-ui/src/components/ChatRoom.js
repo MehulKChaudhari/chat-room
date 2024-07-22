@@ -101,7 +101,7 @@ const ChatRoom = () => {
         status: "MESSAGE"
       }
       if (userData.username !== tab) {
-        privateChats.set(tab).push(chatMessage);
+        privateChats.get(tab).push(chatMessage);
         setPrivateChats(new Map(privateChats));
       }
       stompClient.send('/app/private-message', {}, JSON.stringify(chatMessage));
@@ -153,7 +153,7 @@ const ChatRoom = () => {
       ) : (
         <div className='register'>
           <input id="user-name" placeholder='Enter your cool name' value={userData.username} onChange={handleUsername} />
-          <button type='button' onClick={registerUser}>Join</button>
+          <button type='button' className='register-button' onClick={registerUser}>Join</button>
         </div>
       )}
     </div>
